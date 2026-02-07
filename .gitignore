@@ -22,7 +22,7 @@ build/windows/
 frontend/dist/
 frontend/node_modules/
 wails_build_log.txt
-server/wails_build/
+server/assets/
 
 # Frontend
 app/dist/
