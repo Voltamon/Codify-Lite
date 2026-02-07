@@ -5,7 +5,7 @@ tasks:
     desc: Run the app in dev mode
     dir: ../server
     cmds:
-      - cd ../app && bun install
+      - cd ../app && bun install || true
       - go mod tidy
       - wails dev
 
