@@ -15,7 +15,7 @@ import (
 	"github.com/wailsapp/wails/v2/pkg/options/assetserver"
 )
 
-//go:embed assets
+//go:embed all:assets
 var assets embed.FS
 
 func main() {
