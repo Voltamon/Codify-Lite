@@ -5,6 +5,7 @@ tasks:
     desc: Run the app in dev mode
     dir: ../server
     cmds:
+      - go mod tidy
       - wails dev
 
   build:
