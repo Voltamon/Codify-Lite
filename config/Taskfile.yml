@@ -5,8 +5,10 @@ tasks:
     desc: Run the app in dev mode
     dir: ../server
     cmds:
+      - cd ../app && bun install
       - go mod tidy
       - wails dev
+
 
   build:
     desc: Build the production application
