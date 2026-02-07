@@ -4,6 +4,9 @@
     "version": "0.0.0",
     "license": "MIT",
     "type": "module",
+    "trustedDependencies": [
+        "esbuild"
+    ],
     "scripts": {
         "dev": "vite",
         "build": "tsc && vite build",
