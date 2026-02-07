@@ -1,0 +1,20 @@
+{
+    "$schema": "https://wails.io/schemas/config.v2.json",
+    "name": "codify-lite",
+    "outputfilename": "codify-lite.exe",
+    "build:dir": "../build",
+    "frontend:dir": "../app",
+    "frontend:install": "bun install",
+    "frontend:build": "bun run build",
+    "frontend:dev:watcher": "bun run dev",
+    "frontend:dev:serverUrl": "http://localhost:5173",
+    "wailsjsdir": "../app/src",
+    "assetdir": "../app/src/assets",
+    "reldir": ".",
+    "author": {
+        "name": "Codify",
+        "email": "hello@codify.com"
+    },
+    "iconName": "../app/src/assets/icon.png",
+    "debounce": 100
+}

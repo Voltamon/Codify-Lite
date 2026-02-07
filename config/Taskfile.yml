@@ -1,0 +1,26 @@
+version: '3'
+
+tasks:
+  dev:
+    desc: Run the app in dev mode
+    dir: ../server
+    cmds:
+      - wails dev
+
+  build:
+    desc: Build the production application
+    dir: ../server
+    cmds:
+      - wails build
+
+  sqlc:
+    desc: Generate SQLc code
+    dir: ../database
+    cmds:
+      - sqlc generate
+
+  test:
+    desc: Run backend tests
+    dir: ../server
+    cmds:
+      - go test ./...

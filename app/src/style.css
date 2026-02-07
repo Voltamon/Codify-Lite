@@ -1,0 +1,6 @@
+@import "@picocss/pico";
+
+/* Custom overrides can go here */
+body {
+    padding: 2rem; /* Add some padding for better visual */
+}

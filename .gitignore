@@ -1,0 +1,52 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool
+*.out
+
+# Go workspace file
+go.work
+
+# Build directories
+build/bin/
+build/windows/
+
+# Wails
+frontend/dist/
+frontend/node_modules/
+wails_build_log.txt
+
+# Frontend
+app/dist/
+app/node_modules/
+app/.vite/
+
+# PocketBase data
+database/pocketbase/data.db*
+database/pocketbase/logs.db*
+database/pocketbase/backups/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+
+# Logs
+*.log

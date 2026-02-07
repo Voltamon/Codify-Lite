@@ -1,0 +1,6 @@
+[tools]
+go = "1.23"
+task = "latest"
+sqlc = "latest"
+bun = "latest"
+"go:github.com/wailsapp/wails/v2/cmd/wails" = "latest"
