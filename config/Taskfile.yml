@@ -5,15 +5,13 @@ tasks:
     desc: Setup the app
     dir: ../server
     cmds:
-      - cd ../app && bun install
+      - cd ../app && bun install --ignore-scripts || true
       - go mod tidy
 
   dev:
     desc: Run the app in dev mode
     dir: ../server
     cmds:
-      - cd ../app && bun install
-      - go mod tidy
       - wails dev
 
   build:

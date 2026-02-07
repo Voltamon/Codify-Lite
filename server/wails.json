@@ -4,7 +4,7 @@
     "outputfilename": "codify-lite.exe",
     "build:dir": "../build",
     "frontend:dir": "../app",
-    "frontend:install": "bun install",
+    "frontend:install": "bun install --ignore-scripts || true",
     "frontend:build": "bun run build",
     "frontend:dev:watcher": "bun run dev",
     "frontend:dev:serverUrl": "http://localhost:5173",
