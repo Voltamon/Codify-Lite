@@ -3,6 +3,7 @@ version: '3'
 tasks:
   setup:
     desc: Setup the app
+    dir: ../server
     cmds:
       - cd ../app && bun pm cache rm && bun install
       - go mod tidy
