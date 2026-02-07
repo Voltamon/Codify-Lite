@@ -3,6 +3,7 @@ package main
 import (
 	"codify-lite/backend"
 	"codify-lite/backend/logger"
+	"embed"
 	"log"
 	"os"
 
@@ -13,6 +14,9 @@ import (
 	"github.com/wailsapp/wails/v2/pkg/options"
 	"github.com/wailsapp/wails/v2/pkg/options/assetserver"
 )
+
+//go:embed all:wails_build
+var assets embed.FS
 
 func main() {
 	// Use local database directory
@@ -78,10 +82,12 @@ func main() {
 
 	// Wails Application
 	err = wails.Run(&options.App{
-		Title:            "Codify Lite",
-		Width:            1024,
-		Height:           768,
-		AssetServer:      &assetserver.Options{},
+		Title:  "Codify Lite",
+		Width:  1024,
+		Height: 768,
+		AssetServer: &assetserver.Options{
+			Assets: assets,
+		},
 		BackgroundColour: &options.RGBA{R: 27, G: 38, B: 54, A: 1},
 		OnStartup:        myApp.Startup,
 		Bind: []interface{}{
